@@ -5,4 +5,4 @@
 build
 
 # Ignore compiled java classes
-.class
+*.class

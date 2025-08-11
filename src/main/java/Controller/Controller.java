@@ -12,6 +12,7 @@ public class Controller {
     private DrawingPlate drawingPlate;
     private Drawer d;
     private Settings settings;
+    private int dotDiameter = 20;
   
     public Controller(DrawingPlate drawingPlate) {
         this.drawingPlate = drawingPlate;
@@ -28,11 +29,10 @@ public class Controller {
          drawingPlate.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
-                // Get the mouse position relative to the JFrame
                 int x = e.getX();
                 int y = e.getY();
                 System.out.println("Mouse pressed at: X=" + x + ", Y=" + y);
-                dots.addDot(x, y, 20);
+                dots.addDot(x-2*dotDiameter, y-3*dotDiameter, dotDiameter);
                 if(dots.hasAtLeastTwoDots()) {
                     int x1 = dots.getTwoLatestDots()[0].getPos().getX();
                     int y1 = dots.getTwoLatestDots()[0].getPos().getY();

@@ -52,6 +52,7 @@ public class MenuBar extends JMenuBar {
             }
             frame.refresh(d);
         });
+
         return view;
     }
 

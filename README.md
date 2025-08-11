@@ -45,8 +45,8 @@ However the program includes three options:
 
 ## Opening files
 The program comes prepared with a .csv file to draw dots and lines from.
-The format for drawing a dot is: Dot `<x-position> <y-position> <diameter>`
-The format for drawing a line is: Line `<starting x-position> <starting y-position> <ending x-position> <ending y-position>`
+- The format for drawing a dot is: Dot `<x-position> <y-position> <diameter>`
+- The format for drawing a line is: Line `<starting x-position> <starting y-position> <ending x-position> <ending y-position>`
 
 Feel free to customize the data.csv file found in the root directory!
 
